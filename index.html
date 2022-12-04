@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Egor CV</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <table cellpadding="15">
-      <tr>
-        <td>
-          <img
-            src="Снимок%20экрана%20от%202022-11-20%2015-18-03.png"
-            alt="Тут должно быть фото морской свинки"
-            width="200"
-          />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img
+          src="Снимок%20экрана%20от%202022-11-20%2015-18-03.png"
+          alt="Тут должно быть фото морской свинки"
+          class="avatar"
+        />
+        <div class="info-text">
           <h1>Egor Anchutin</h1>
           <p>
             <em>Я Java разработчик</em>
@@ -22,78 +21,97 @@
           <p>
             <strong>Изучаю японский язык в Японии</strong>
           </p>
-        </td>
-      </tr>
-    </table>
 
-    <hr>
+          <h4>Мои соцсети</h4>
+          <a href="https://www.instagram.com/mr_z_morgan/" target="_blank">Instagram</a>
+          |
+          <a href="https://github.com/MrZMorgan" target="_blank">Github</a>
+          |
+          <a href="https://www.twitch.tv/mrzmorgan" target="_blank">Twitch</a>
 
-    <h2>Мои соцсети</h2>
+        </div>
+      </div>
 
-    <ul>
-      <li><a href="https://www.instagram.com/mr_z_morgan/" target="_blank">Instagram</a></li>
-      <li><a href="https://github.com/MrZMorgan" target="_blank">Github</a></li>
-      <li><a href="https://www.twitch.tv/mrzmorgan" target="_blank">Twitch</a></li>
-    </ul>
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Японский язык</li>
+          <li>Компьютерные игры</li>
+          <li>Путешестивя</li>
+        </ol>
+      </div>
 
-    <hr>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
 
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Японский язык</li>
-      <li>Компьютерные игры</li>
-      <li>Путешестивя</li>
-    </ol>
+          <tr>
+            <td>Foxminded</td>
+            <td>Java developer trainee</td>
+            <td>January 2021 - May 2021</td>
+          </tr>
 
-    <hr>
+          <tr>
+            <td>CosySoft</td>
+            <td>Java developer</td>
+            <td>May 2021 - October 2022</td>
+          </tr>
 
-    <h2>Опыт работы</h2>
-     <table border="2">
-       <thead>
-         <tr>
-           <th>Компания</th>
-           <th>Должность</th>
-           <th>Год</th>
-         </tr>
-       </thead>
+          <tr>
+            <td>Freelance</td>
+            <td>Java mentor</td>
+            <td>from October 2022</td>
+          </tr>
 
-       <tbody>
-        <tr>
-          <td>CosySoft</td>
-          <td>Java developer</td>
-          <td>May 2021 - October 2022</td>
-        </tr>
-       </tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
 
-       <tfoot></tfoot>
-     </table>
+      <div class="card bg-red">
+        <h2>Интересные видео на Youtube</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v=uW5oxIXDdWE&t=219s">Мэддисона не отпускает Готика 2</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=EH7aWg_U3bo">Мэддисон знакомится с финской деревней в My Summer Car</a>
+          </li>
+        </ul>
+      </div>
 
-    <hr>
+      <div class="contact">
+        <h2>Связяться со мной</h2>
 
-    <h2>Интересные видео на Youtube</h2>
-    <a href="youtube.html">Посмотреть список</a>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя">
 
-    <h2>Связяться со мной</h2>
+            </div>
 
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя">
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите ваш email">
+            </div>
 
-      <br>
+          </div>
 
-      <label for="email">Ваш email:</label>
-      <input type="email" id="email" placeholder="Введите ваш email">
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea id="text" placeholder="Введите ваше сообщение" rows="2" cols="15"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Связаться">
+        </form>
+      </div>
 
-      <br>
+<!--      <div class="position">-->
+<!--        <div class="box"></div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-      <br>
+  <div style="margin-bottom: 500px;;">
 
-      <label for="text">Ваше сообщение:</label>
-      <textarea id="text" placeholder="Введите ваше сообщение" rows="2" cols="15"></textarea>
-
-      <input type="submit" value="Связаться">
-    </form>
-
-    <hr>
+  </div>
   </body>
 </html>
